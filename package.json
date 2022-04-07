@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "postinstall": "yarn build",
     "test": "mocha -r @ts-tools/node \"test/**/*.test.ts\"",
     "build": "tsc",
     "lint": "tslint -c tslint.json '{src,test}/**/*.ts' --fix",
